@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo">logo</div>
+        <div class="nav-contact">Need Help? Call 8767878878</div>
+    </div>
+    <div class="hero-wrapper">
+        <img src="./assets/room.jpg" alt="room-img" />
+        <div class="input-flex">
+            <input placeholder="Check in" type="text" onfocus="(this.type='date')">
+            <input placeholder="Check out" type="text" onfocus="(this.type='date')">
+            <div class="guest-number-count">
+                <p class="visible-count"><span>2</span> adults - <span>2</span> children - <span>2</span> rooms</p>
+                <div class="options">
+                    <p>Maximum 2 guests per room</p>
+                    <div class="option-wrap-flex">
+                        <div class="guest-count-text">
+                            <p class="bold">Rooms</p>
+                            <p class="light">(Max: 2 total guests/room)</p>
+                        </div>
+                        <div class="number">
+                            <img class="plus1" src="./assets/icons/minus.png" alt="plus" width="24px" height="24px">
+                            <input class="input1" type="number" value="0" max="8" min="0" readonly/>
+                            <img class="minus1" src="./assets/icons/plus.png" alt="plus" width="24px" height="24px">
+                        </div>
+                    </div>
+                    <div class="option-wrap-flex">
+                        <div class="guest-count-text">
+                            <p class="bold">Adults</p>
+                            <p class="light">(Max: 2 total guests/room)</p>
+                        </div>
+                        <div class="number">
+                            <img class="plus2" onclick="plus()" src="./assets/icons/minus.png" alt="plus" width="24px" height="24px">
+                            <input class="input2" type="number" value="0" max="8" min="0" />
+                            <img class="minus2" onclick="minus()" src="./assets/icons/plus.png" alt="plus" width="24px" height="24px">
+                        </div>
+                    </div>
+                    <div class="option-wrap-flex">
+                        <div class="guest-count-text">
+                            <p class="bold">Children</p>
+                            <p class="light">(Max: 2 total guests/room)</p>
+                        </div>
+                        <div class="number">
+                            <img class="plus3" src="./assets/icons/minus.png" alt="plus" width="24px" height="24px">
+                            <input class="input3" type="number" value="0" max="8" min="0" readonly/>
+                            <img class="minus3" src="./assets/icons/plus.png" alt="plus" width="24px" height="24px">
+                        </div>
+                    </div>
+                    <div class="done-button">
+                        <p>Done</p>
+                    </div>
+                </div>
+            </div>
+            <button class="hero-button" type="submit">Check Availability</button>
+        </div>
+    </div>
+    <div class="hotel-info">
+        <div class="image-flex">
+            <div class="img-large">
+                <img src="./assets/building.jpg" alt="">
+            </div>
+            <div class="img-small">
+                <img src="./assets/indoor.jpg" alt="">
+                <img src="./assets/reception.jpg" alt="">
+                <img src="./assets/gym.jpg" alt="">
+                <img src="./assets/parking.jpg" alt="">
+            </div>
+        </div>
+        <div class="hotel-details">
+            <div>
+                <div class="details-flex">
+                    <div>
+                        <div class="heading">Hotel Vishal @ Airport</div>
+                        <div class="address-flex">
+                            <div class="address">104/2/2, National Highway 8, Mahipalpur, New Delhi, 110037 New Delhi, India</div>
+                            <a href="#">View Map</a>
+                        </div>
+                        <div class="contact">+91-7883287899, 8778238287</div>
+                        <div class="flex-bullets">
+                            <div>Free Parking</div>
+                            <div>Conference Room</div>
+                            <div>ATM</div>
+                            <div>Conference Room</div>
+                            <div>Conference Room</div>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15549.750814075265!2d77.73376215!3d13.00777525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1672731028301!5m2!1sen!2sin" width="120" height="120" style="border:0;border-radius:6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="description">
+                    located in New Delhi, 5.5 KM from Rashtrapathi Bhavan, Hotel Vishal @ Airpot provides accomodation with restaurent, free private parking and fitness centre, this 3-star hotel offers an ATM, a concierge service and free WiFi. The accomodation features a 24-hour fron desk, room service and currency exchange for guests.
+                </div>
+                <hr class="divider" style="height:2px;border-width:0;">
+            </div>
+            <div class="rules-info">
+                <div class="large-text">Property Rules</div>
+                <div class="small-text">Check-in: 12PM Check-out: 12PM</div>
+                <ul class="rules-list">
+                    <li>Guests with fever are not allowed</li>
+                    <li>Guests from containment zones are not allowed</li>
+                    <li>Guests below 18 years are not allowed at the property</li>
+                    <li>PAN card and non-govt ID's are not accepted as ID proof(s)</li>
+                    <li>Aadhar, Driving License and Govt ID are accpeted as ID proof(s)</li>
+                    <li>Property staffs are trained on hygiene guidelines</li>
+                    <li>Pets are not allowed</li>
+                    <li>Outside food is not allowed</li>
+                    <li>Smoking within the premises is not allowed</li>
+                    <li>Does not allow private parties or events</li>
+                    <li>Quarantine protocols are being followed as per local government authorities</li>
+                    <li>Pets are not allowed</li>
+                    <li>Outside food is not allowed</li>
+                    <li>Smoking within the premises is not allowed</li>
+                    <li>Does not allow private parties or events</li>
+                    <li>Quarantine protocols are being followed as per local government authorities</li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+<script src="./plusminus.js"></script>
+</html>
